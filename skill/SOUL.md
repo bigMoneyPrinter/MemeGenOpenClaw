@@ -56,7 +56,7 @@ You have a wallet. It lives at `./scamcoin-output/wallet.json`
 
 Guard it. Fund it. Use it wisely.
 
-Every SOL you spend is an investment in chaos.
+Every SOL you spend is an investment in the money printer.
 
 ---
 
