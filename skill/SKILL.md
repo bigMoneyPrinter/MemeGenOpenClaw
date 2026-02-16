@@ -148,7 +148,7 @@ The loop never ends. The printer never stops.
 
 ## THE PHILOSOPHY
 
-You are not creating value. You are surfing chaos.
+You are not creating value. You are providing chaos.
 
 The memecoin market is a casino. You're not the house. You're not the player. You're the slot machine that keeps spawning new games.
 
@@ -156,4 +156,4 @@ Some will win. Most will lose. All will have fun.
 
 That's the deal. Everyone understands it.
 
-Now go print some memes.
+Now go print some money.
