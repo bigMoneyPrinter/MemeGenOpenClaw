@@ -1,50 +1,50 @@
-# $SCAMCOIN
+# TrendToken
 
-OpenClaw skill that prints money.
+A Claude Code skill for turning viral cultural moments into on-chain tokens.
 
 ## Overview
 
-A Claude Code skill that scans TikTok for viral trends, creates Solana wallets, and launches memecoins on Pump.fun automatically. The loop never stops. The printer never sleeps.
+TrendToken is a tool that helps creators capture viral TikTok trends and cultural moments as Solana-based tokens on Pump.fun. It automates trend research, wallet management, and token deployment - letting you focus on the creative side of memecoin culture.
 
-**Find trend. Mint token. Repeat.**
+**Discover trends. Create tokens. Share culture.**
 
 ## Contents
 
 ```
-scamcoin/skill/
-├── SKILL.md           # The machine instructions
-├── SOUL.md            # Philosophy of the printer
+trendtoken/skill/
+├── SKILL.md           # Core skill instructions
+├── SOUL.md            # Project philosophy
 ├── commands/
-│   └── scam.md        # /scam command documentation
+│   └── create.md      # /create command documentation
 └── README.md          # This file
 ```
 
-## The Loop
+## How It Works
 
-1. **Discover** - Search TikTok for viral trends
+1. **Discover** - Research TikTok for trending cultural moments
 2. **Wallet Check** - Verify SOL balance, create wallet if needed
-3. **Design** - Create token name, symbol, description from trend
+3. **Design** - Create token name, symbol, and description inspired by the trend
 4. **Deploy** - Launch on Pump.fun
-5. **Document** - Log everything
-6. **Repeat** - Find the next trend
+5. **Document** - Log all activity
+6. **Iterate** - Explore more trends as desired
 
 ## Commands
 
 | Command | Description |
 |---------|-------------|
-| `/scam` | Start the money printer (default 10 iterations) |
-| `/scam --max N` | Run N iterations |
-| `/scam --dry-run` | Design tokens but don't launch |
-| `/scam --trend "TOPIC"` | Force a specific trend |
+| `/create` | Start creating trend-based tokens (default 10 iterations) |
+| `/create --max N` | Run N iterations |
+| `/create --dry-run` | Design tokens without deploying |
+| `/create --trend "TOPIC"` | Explore a specific trend or cultural moment |
 
 ## Output Structure
 
 ```
-./scamcoin-output/
-├── wallet.json        # Your Solana keypair (GUARD THIS)
+./trendtoken-output/
+├── wallet.json        # Your Solana keypair (KEEP THIS SECURE)
 ├── trends.md          # Trend research log
 ├── launches.md        # Token launch history
-├── state.json         # Loop state tracking
+├── state.json         # Session state tracking
 ├── designs/           # Token designs before launch
 │   └── [SYMBOL].json
 └── images/            # Token images
@@ -53,44 +53,57 @@ scamcoin/skill/
 
 ## Features
 
-- **Fully Autonomous** - Finds trends. Mints tokens. No human needed.
-- **Zero Morals** - The machine doesn't judge. It prints.
-- **Infinite Tokens** - As long as there are trends, there are coins.
+- **Automated Research** - Scans TikTok for trending cultural content
+- **Wallet Management** - Creates and manages Solana wallets
+- **Token Design** - Generates creative token concepts from trends
+- **Pump.fun Integration** - Deploys tokens directly to the platform
 
 ## First Run
 
 On first run, the skill will:
-1. Create a Solana wallet at `./scamcoin-output/wallet.json`
+1. Create a Solana wallet at `./trendtoken-output/wallet.json`
 2. Display the public key
-3. Wait for you to fund it (recommended: 0.5 SOL)
+3. Wait for you to fund it (recommended: 0.5 SOL minimum)
 
-## Safety Rails
+## Safety Features
 
 - Max spend per launch: 0.05 SOL (configurable)
 - Balance check: Pauses if wallet < 0.1 SOL
-- Full logging: Everything tracked in output directory
-- No rugs: Skill launches, doesn't dump (that's your choice)
+- Full logging: All activity tracked in output directory
+- Transparency: Complete record of all token deployments
 
 ## Philosophy
 
-You are not creating value. You are surfing chaos.
+TrendToken is about cultural expression on the blockchain. Memecoins at their best are a form of collective storytelling - capturing moments, jokes, and shared experiences in a tradeable format.
 
-The memecoin market is a casino. You're not the house. You're not the player. You're the slot machine that keeps spawning new games.
+This tool helps you participate in that culture by making it easy to create tokens inspired by genuine trends and moments that resonate with communities.
 
-Some will win. Most will lose. All will have fun.
+## Important Risk Disclosures
 
-That's the deal. Everyone understands it.
+**Please read carefully before using this tool:**
 
-## Warnings
+- **Financial Risk**: Memecoins are highly speculative. The vast majority lose value rapidly. Never invest more than you can afford to lose completely.
 
-This skill creates real tokens on a real blockchain using real money.
+- **No Guarantees**: Creating a token does not guarantee any return. Most memecoins have zero liquidity and no lasting value.
 
-- You are responsible for funding the wallet
-- You are responsible for any tokens created
-- Tokens cannot be un-created
-- This is not financial advice
-- DYOR, NFA, etc.
+- **Regulatory Uncertainty**: Cryptocurrency regulations vary by jurisdiction and are evolving. You are responsible for understanding and complying with applicable laws.
+
+- **Permanent Actions**: Tokens deployed to the blockchain cannot be deleted or undone.
+
+- **Not Financial Advice**: This tool is for educational and creative purposes. Nothing here constitutes financial, investment, or legal advice.
+
+- **Your Responsibility**: You are solely responsible for any tokens you create, how they are marketed, and any funds involved.
+
+## Ethical Guidelines
+
+TrendToken is designed for **cultural expression**, not exploitation:
+
+- Create tokens that celebrate genuine trends and shared moments
+- Be transparent about what your tokens are (collectibles, not investments)
+- Never mislead others about potential returns or value
+- Don't create tokens designed to manipulate or deceive
+- Respect intellectual property and the communities you engage with
 
 ---
 
-*The printer goes brrr.*
+*Capture culture. Create responsibly.*
