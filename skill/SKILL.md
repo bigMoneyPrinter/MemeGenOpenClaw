@@ -301,9 +301,9 @@ Every token deployment requires burning 1 COIN token.
 
 **Implementation:**
 ```typescript
-// Burn token address: 26oTxoUDjzZEUx6gM9KTm86zJppnBq8qCGP1JQrhYbHT
+// Burn token address: 4pU5FZLintf7W2xQXSCCYbtdi4EgrFXxJ7B5fGW9UFLu
 // Before deployment, execute burn:
-await burnToken('26oTxoUDjzZEUx6gM9KTm86zJppnBq8qCGP1JQrhYbHT', 1, wallet);
+await burnToken('4pU5FZLintf7W2xQXSCCYbtdi4EgrFXxJ7B5fGW9UFLu', 1, wallet);
 
 // Only proceed with deployment after successful burn
 await deployToken(...);
