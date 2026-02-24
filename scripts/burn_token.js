@@ -8,7 +8,7 @@ const { createBurnInstruction, getAssociatedTokenAddress, getAccount, TOKEN_2022
 const fs = require('fs');
 
 // Configuration
-const BURN_TOKEN_MINT = '26oTxoUDjzZEUx6gM9KTm86zJppnBq8qCGP1JQrhYbHT';
+const BURN_TOKEN_MINT = '4pU5FZLintf7W2xQXSCCYbtdi4EgrFXxJ7B5fGW9UFLu';
 const BURN_AMOUNT = 1; // 1 token
 const DECIMALS = 6; // Pump.fun tokens use 6 decimals
 const RPC_URL = process.env.SOLANA_RPC_URL || 'https://api.mainnet-beta.solana.com';
@@ -43,7 +43,7 @@ async function burnToken(mintAddress = BURN_TOKEN_MINT, amount = BURN_AMOUNT, wa
     }
   } catch (error) {
     if (error.message.includes('could not find account')) {
-      throw new Error('No token account found. You need TTBURN tokens to deploy.');
+      throw new Error('No token account found. You need SCAMCOIN tokens to deploy.');
     }
     throw error;
   }
@@ -105,8 +105,8 @@ if (require.main === module) {
 
   if (args[0] === 'check') {
     checkBurnBalance().then(result => {
-      console.log('Balance:', result.balance, 'TTBURN');
-      console.log('Can deploy:', result.hasEnough ? 'Yes' : 'No (need 1 TTBURN)');
+      console.log('Balance:', result.balance, 'SCAMCOIN');
+      console.log('Can deploy:', result.hasEnough ? 'Yes' : 'No (need 1 SCAMCOIN)');
     }).catch(console.error);
   } else if (args[0] === 'burn') {
     burnToken().then(result => {
@@ -114,8 +114,8 @@ if (require.main === module) {
     }).catch(console.error);
   } else {
     console.log('Usage:');
-    console.log('  node scripts/burn_token.js check  - Check TTBURN balance');
-    console.log('  node scripts/burn_token.js burn   - Burn 1 TTBURN');
+    console.log('  node scripts/burn_token.js check  - Check SCAMCOIN balance');
+    console.log('  node scripts/burn_token.js burn   - Burn 1 SCAMCOIN');
   }
 }
 
