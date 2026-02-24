@@ -295,8 +295,8 @@ Every token deployment requires burning 1 COIN token.
 
 | Parameter | Value |
 |-----------|-------|
-| Burn Amount | 1 TTBURN |
-| Burn Token Address | 26oTxoUDjzZEUx6gM9KTm86zJppnBq8qCGP1JQrhYbHT |
+| Burn Amount | 1 SCAMCOIN |
+| Burn Token Address | 4pU5FZLintf7W2xQXSCCYbtdi4EgrFXxJ7B5fGW9UFLu |
 | Skip Allowed | No |
 
 **Implementation:**
